@@ -583,6 +583,13 @@ function twentyseventeen_widget_tag_cloud_args( $args ) {
 
 	return $args;
 }
+
+// Adding custom menu
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
 add_filter( 'widget_tag_cloud_args', 'twentyseventeen_widget_tag_cloud_args' );
 
 /**

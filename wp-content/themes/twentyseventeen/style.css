@@ -1552,12 +1552,35 @@ body {
 13.1 Header
 --------------------------------------------------------------*/
 
+
+/* Hal Code */
+
+#site-navigation{
+	background-color: #222222;
+	color: white;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	left: -.09%;
+	padding: 1%;
+	z-index: 10;
+}
+
+.entry-header{
+	margin-top: 0px;
+}
+
 #masthead .wrap {
 	position: relative;
 }
 
 .site-header {
 	background-color: #fafafa;
+	position: relative;
+}
+
+.custom-header {
+	margin: -40%;
 	position: relative;
 }
 
@@ -1859,7 +1882,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	text-transform: none;
 }
 
-.twentyseventeen-panel .recent-posts .entry-header .edit-link {
+.twentyseventeen-panel .recent-posts  .edit-link {
 	color: #222;
 	display: inline-block;
 	font-size: 11px;
