@@ -75,7 +75,7 @@ RUN set -ex; \
 	\
 	wp --allow-root --version
 
-COPY docker-entrypoint.sh /usr/local/bin/sh
+COPY docker-entrypoint.sh /usr/local/bin
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 USER www-data
